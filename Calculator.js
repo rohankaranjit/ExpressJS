@@ -16,3 +16,7 @@ app.post("/", function (req, res) {
 
   res.send("The result is " + result);
 });
+
+app.listen(3000, function () {
+  console.log("Server is running in port 3000.");
+});
