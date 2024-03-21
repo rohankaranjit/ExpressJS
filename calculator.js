@@ -1,4 +1,4 @@
-/Backend Part
+//Backend Part
 <script>
     const app = express();
 
