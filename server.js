@@ -12,7 +12,6 @@ app.get("/contact",function(req,res){
 })
 app.get("/about",function(req,res){
     res.send("I am Rohan Karanjit.An aspiring full stack developer. I live in
-
 Imadol . I study in Samriddhi College and I am in my fifth semester.")
 })
 
