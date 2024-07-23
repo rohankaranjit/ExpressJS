@@ -14,3 +14,8 @@ app.get("/", (req, res) => {
 
 app.use(bodyParser.urlencoded({extended: true}));
 
+app.post("/submit",(req,res)=>{
+  console.log(req.body );
+})
+
+
