@@ -9,5 +9,6 @@ function logger(req,res,next) {
   next();
 };
 
+app.use(logger);
 
 
