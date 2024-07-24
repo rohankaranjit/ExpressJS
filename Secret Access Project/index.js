@@ -11,3 +11,10 @@ const port = 3000;
 var userIsAuthorised = false;
 
 app.use(bodyParser.urlencoded({extended : true}));
+function passwordCheck(req,res,next){
+    const password = req.body["password"];
+    if(password === "aa"){
+        userIsAuthorised = true;
+    }
+    next();
+}
