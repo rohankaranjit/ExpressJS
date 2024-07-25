@@ -23,3 +23,7 @@ app.use(bandNameGenerated);
 app.get("/",(req,res)=>{
   res.sendFile(_dirName + "/public/index.html")
 });
+
+app.post("/submit",(req,res)=>{
+  res.send(`Your band name is ${bandName}`);
+});
