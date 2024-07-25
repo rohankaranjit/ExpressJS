@@ -10,3 +10,7 @@ const _dirName =dirname(fileURLToPath(import.meta.url))
 app.use(bodyParser.urlencoded({extended : true}));
 
 var bandName = "";
+
+function bandNameGenerated(req,res,next){
+  const street = req.body["street"];
+  const pet = req.body["pet"];
