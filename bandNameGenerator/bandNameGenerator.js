@@ -16,3 +16,6 @@ function bandNameGenerated(req,res,next){
   const pet = req.body["pet"];
 
   bandName = street + pet;
+  console.log(req.body);
+  next();
+}
