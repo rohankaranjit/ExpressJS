@@ -19,3 +19,7 @@ function bandNameGenerated(req,res,next){
   console.log(req.body);
   next();
 }
+app.use(bandNameGenerated);
+app.get("/",(req,res)=>{
+  res.sendFile(_dirName + "/public/index.html")
+});
