@@ -14,3 +14,5 @@ var bandName = "";
 function bandNameGenerated(req,res,next){
   const street = req.body["street"];
   const pet = req.body["pet"];
+
+  bandName = street + pet;
