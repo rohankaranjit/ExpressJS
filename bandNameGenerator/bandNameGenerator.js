@@ -27,3 +27,7 @@ app.get("/",(req,res)=>{
 app.post("/submit",(req,res)=>{
   res.send(`Your band name is ${bandName}`);
 });
+
+app.listen(port , ()=>{
+  console.log(`Server running at ${port}`)
+});
